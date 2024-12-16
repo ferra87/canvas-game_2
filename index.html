@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <!--tailwind include gli stili nella classe-->
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <title></title>
+    <style>
+      body {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0">
+    <div class="fixed text-white text-sm ml-2 mt-1 select-none">
+      <span>Score: </span><span id="score">0</span>
+    </div>
+
+    <div class="fixed inset-0 flex items-center justify-center" id="modalEl">
+      <div class="bg-white max-w-md w-full p-6 text-center">
+        <h1 class="text-4xl font-bold leading-none" id="finalScoreEl">0</h1>
+        <p class="text-sm text-gray-700 mb-4">Points</p>
+        <div>
+          <button
+            class="bg-blue-500 text-white w-full py-3 rounded-full"
+            id="startGameBtn"
+          >
+            Start Game
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <canvas id="canvas" style="background-color: black"></canvas>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+    integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script src="classi.js"></script>
+  <script src="main.js"></script>
+</html>
